@@ -25,13 +25,13 @@ Installation:
     $ vagrant up
 ```
 
-5. Launch your project in-browser: [http://localhost:8080](http://localhost:8080).
+5. Launch your project in-browser (being served by apache): [http://localhost:8080](http://localhost:8080).
 
 
-What's inside:
+What's Inside:
 --------------
 
-Installed software:
+Installed Software:
 
 * Apache (preconfigured)
 * MySQL
@@ -40,18 +40,13 @@ Installed software:
 * zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * git, git-deploy, subversion
 * vim, screen, byobu, nano, curl, wget, links
-* [MailCatcher](http://mailcatcher.me/)
+* [MailCatcher](http://mailcatcher.me/) - all system/php mail routes here.
 * [SSMTP](http://packages.debian.org/squeeze/ssmtp) on port 25 wrapping MailCatcher
 * tailored bash dotfiles with many essentials ...
 
-Apache virtual hosts are created in `public` folder or optionally in a per site configurable docroot and configured with data bag `sites`.
-Apache serves the projects docroot (e.g. this cloned directory containing the `Vagrantfile`) via http & https.
 
-phpMyAdmin & phpinfo are available @:
+Services:
 
-* [http://localhost:8080/phpmyadmin](http://localhost:8080/phpmyadmin) -or- [http://localhost:8080/pma](http://localhost:8080/pma)
-* [http://localhost:8080/phpinfo](http://localhost:8080/phpinfo)
-
-PHP & system routes mail to MailCatcher. The web frontend for MailCatcher is running @:
-
-* [http://localhost:1080](http://localhost:1080)
+* phpMyAdmin: [http://localhost:8080/phpmyadmin](http://localhost:8080/phpmyadmin)
+* phpinfo: [http://localhost:8080/phpinfo](http://localhost:8080/phpinfo)
+* Mailcatcher [http://localhost:1080](http://localhost:1080)
