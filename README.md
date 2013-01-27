@@ -48,5 +48,18 @@ Installed Software:
 Services:
 
 * phpMyAdmin: [http://localhost:8080/phpmyadmin](http://localhost:8080/phpmyadmin)
-* phpinfo: [http://localhost:8080/phpinfo](http://localhost:8080/phpinfo)
-* Mailcatcher [http://localhost:1080](http://localhost:1080)
+* PHPInfo: [http://localhost:8080/phpinfo](http://localhost:8080/phpinfo)
+* MailCatcher [http://localhost:1080](http://localhost:1080)
+
+
+Vagrant Port Mapping:
+
+The basebox automatically routes the following ports from guest to host:
+
+```
+  config.vm.forward_port 80, 8080     # HTTP
+  config.vm.forward_port 443, 4430    # HTTPS
+  config.vm.forward_port 3306, 3306   # MYSQL
+  config.vm.forward_port 1025, 1025   # MailCatcher
+  config.vm.forward_port 1080, 1080   # MailCatcher Frontend
+  ```
