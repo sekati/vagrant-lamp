@@ -6,19 +6,19 @@ A manicured devops Debian Squeeze 64bit LAMP stack configuration for Vagrant.
 Installation:
 -------------
 
-Install [vagrant](http://downloads.vagrantup.com/)
+# Install [Vagrant](http://downloads.vagrantup.com/)
 
     $ gem install vagrant
 
-Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+# Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Add this basebox (name of the box is supposed to be squeeze64)
 
     $ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box
 
-Clone this repository
+# Clone this repository
 
-Go to the repository folder and launch the box
+# Go to the repository folder and launch the box
 
     $ cd [repo]
     $ vagrant up
@@ -44,9 +44,9 @@ Apache serves the projects docroot (e.g. this cloned directory containing the `V
 
 phpMyAdmin & phpinfo are available @:
 
-* http://localhost:8080/phpmyadmin -or- http://localhost:8080/pma
-* http://localhost:8080/phpinfo
+* [http://localhost:8080/phpmyadmin](http://localhost:8080/phpmyadmin) -or- [http://localhost:8080/pma](http://localhost:8080/pma)
+* [http://localhost:8080/phpinfo](http://localhost:8080/phpinfo)
 
 PHP & system routes mail to MailCatcher. The web frontend for MailCatcher is running @:
 
-* http://localhost:1080
+* [http://localhost:1080](http://localhost:1080)
