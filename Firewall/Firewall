@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/sbin/ipfw -q add fwd 127.0.0.1,8080 tcp from 127.0.0.1 to 127.0.0.1 dst-port 80
+/sbin/ipfw -q add fwd 127.0.0.1,4430 tcp from 127.0.0.1 to 127.0.0.1 dst-port 443

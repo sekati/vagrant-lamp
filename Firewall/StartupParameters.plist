@@ -1,0 +1,11 @@
+{
+Description = "Firewall";
+Provides = ("Firewall");
+Requires = ("Network");
+OrderPreference = "None";
+Messages =
+   {
+   start = "Starting NAT/Firewall";
+   stop = "Stopping NAT/Firewall";
+   };
+}
