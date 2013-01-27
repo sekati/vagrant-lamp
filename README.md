@@ -6,22 +6,26 @@ A manicured devops Debian Squeeze 64bit LAMP stack configuration for Vagrant.
 Installation:
 -------------
 
-# Install [Vagrant](http://downloads.vagrantup.com/)
+1. Install [Vagrant](http://downloads.vagrantup.com/)
 
     $ gem install vagrant
 
-# Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Add this basebox (name of the box is supposed to be squeeze64)
 
     $ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box
 
-# Clone this repository
+3. Clone this repository
 
-# Go to the repository folder and launch the box
+4. Go to the repository folder and launch the box
 
     $ cd [repo]
     $ vagrant up
+
+5. Launch in browser: [http://localhost:1080](http://localhost:1080).
+
+
 
 What's inside:
 --------------
