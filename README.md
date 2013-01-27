@@ -19,14 +19,13 @@ Installation:
 4. Create (or go to an existing) project directory, initialize & launch the box:
 
 ```
-    $ mkdir example
-    $ cd example
+    $ mkdir my-project
+    $ cd my-project/
     $ vagrant init squeeze64
     $ vagrant up
 ```
 
-5. Launch your project in-browser: [http://localhost:1080](http://localhost:1080).
-
+5. Launch your project in-browser: [http://localhost:8080](http://localhost:8080).
 
 
 What's inside:
