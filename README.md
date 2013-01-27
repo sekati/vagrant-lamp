@@ -52,9 +52,9 @@ Services:
 * MailCatcher [http://localhost:1080](http://localhost:1080)
 
 
-Vagrant Port Mapping:
+Port Mapping:
 
-The basebox automatically routes the following ports from guest to host:
+The basebox's default Vagrantfile automatically forwards the following ports from guest to host:
 
 ```
   config.vm.forward_port 80, 8080     # HTTP
@@ -63,3 +63,10 @@ The basebox automatically routes the following ports from guest to host:
   config.vm.forward_port 1025, 1025   # MailCatcher
   config.vm.forward_port 1080, 1080   # MailCatcher Frontend
   ```
+
+Firewalls:
+
+Users may wish to re-map the VM to standard HTTP(S) ports rather than 8080/4430. MacOS X users may
+do so by downloading the `Firewall` folder from this repository & placing it in `/Library/StartupItems/`
+& rebooting their machine - allowing them to access `http://localhost` & `https://localhost` for their
+project.
