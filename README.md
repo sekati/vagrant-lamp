@@ -8,13 +8,13 @@ Installation:
 
 1. Install [Vagrant](http://downloads.vagrantup.com/)
 
-    $ gem install vagrant
+    `$ gem install vagrant`
 
 2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Add this basebox (name of the box is supposed to be squeeze64)
 
-    $ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box
+    `$ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box`
 
 3. Clone this repository
 
