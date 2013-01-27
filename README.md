@@ -37,7 +37,7 @@ Installed Software:
 * MySQL
 * PHP (cli, curl, gd, geoip, imagick, mcrypt, memcached, mysql, sasl, sqlite, suhosin, xmlrpc, xsl)
 * phpMyAdmin
-* zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* Ruby, Chef, Puppet
 * git, git-deploy, subversion
 * vim, screen, byobu, nano, curl, wget, links
 * [MailCatcher](http://mailcatcher.me/) - all system/php mail routes here.
