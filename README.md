@@ -10,22 +10,22 @@ Installation:
 
 2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-3. Add this basebox (name of the box is supposed to be squeeze64)
+3. Add the `squeeze64` basebox:
 
 ```
     $ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box
 ```
 
-4. Clone this repository
-
-5. Go to the repository folder and launch the box
+4. Create (or go to an existing) project directory, initialize & launch the box:
 
 ```
-    $ cd [repo]
+    $ mkdir example
+    $ cd example
+    $ vagrant init squeeze64
     $ vagrant up
 ```
 
-6. Launch in browser: [http://localhost:1080](http://localhost:1080).
+5. Launch your project in-browser: [http://localhost:1080](http://localhost:1080).
 
 
 
