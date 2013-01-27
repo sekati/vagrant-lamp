@@ -20,8 +20,10 @@ Add this basebox (name of the box is supposed to be squeeze64)
 
 4. Go to the repository folder and launch the box
 
+```
     $ cd [repo]
     $ vagrant up
+```
 
 5. Launch in browser: [http://localhost:1080](http://localhost:1080).
 
