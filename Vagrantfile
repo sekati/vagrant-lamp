@@ -19,7 +19,8 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 1025, 1025
   config.vm.forward_port 1080, 1080
 
-  #config.vm.share_folder "v-root", "/vagrant", ".", :create=> true, :nfs => true
+  # loosen permissions for www-data @see http://serverfault.com/questions/398414/vagrant-set-default-share-permissions
+  config.vm.share_folder("v-root", "/vagrant", ".", :extra => 'dmode=770,fmode=770')
 
   #config.vm.provision :shell, :inline => "echo \"America/New_York\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
   #config.vm.provision :shell, :inline => "apt-get update --fix-missing"
