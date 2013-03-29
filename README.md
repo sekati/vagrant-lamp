@@ -6,7 +6,7 @@ A manicured devops Debian Squeeze 64bit LAMP stack configuration for Vagrant.
 Installation:
 -------------
 
-1. Install [Vagrant](http://downloads.vagrantup.com/)
+1. Install [Vagrant](http://downloads.vagrantup.com/): `gem install vagrant --version 1.0.7`
 
 2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
@@ -33,7 +33,7 @@ Installed Software:
 
 * Apache (preconfigured)
 * MySQL
-* PHP (cli, curl, gd, geoip, imagick, mcrypt, memcached, mysql, sasl, sqlite, suhosin, xmlrpc, xsl)
+* PHP (apc, cli, curl, gd, geoip, imagick, mcrypt, memcached, mysql, sasl, sqlite, suhosin, xmlrpc, xsl)
 * phpMyAdmin
 * Ruby, Chef, Puppet
 * git, git-deploy, subversion
