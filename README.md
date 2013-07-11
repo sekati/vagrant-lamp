@@ -14,6 +14,10 @@ Installation:
 
 	```$ vagrant box add squeeze64 http://cdn.sekati.com/vagrant/squeeze64.box```
 
+  alternately, or additionally, for a PHP54 / MongoDB versions:
+
+  ```$ vagrant box add squeeze64-php54 http://cdn.sekati.com/vagrant/squeeze64-php54.box```
+
 4. Create (or go to an existing) project directory, initialize & launch the box:
 
 	```
@@ -60,6 +64,13 @@ The basebox's default Vagrantfile automatically forwards the following ports fro
   config.vm.forward_port 3306, 3306   # MYSQL
   config.vm.forward_port 1025, 1025   # MailCatcher
   config.vm.forward_port 1080, 1080   # MailCatcher Frontend
+  ```
+
+Additional ports for the PHP54/MongoDB basebox:
+
+```
+  config.vm.forward_port 27017, 27017 # MongoDB
+  config.vm.forward_port 28017, 28017 # MongoDB admin
   ```
 
 Port Remap Firewall Script:
